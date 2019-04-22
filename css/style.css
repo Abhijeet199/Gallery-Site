@@ -61,7 +61,6 @@ content .main {
     position: relative;
     width: 80%;
     margin: 25px auto;
-    min-width: 384px;
 }
 
 content .main .jumbo {
@@ -71,6 +70,7 @@ content .main .jumbo {
     background: #ecf0f1;
     border-radius: 10px;
     box-shadow: .1px .1px 5px rgb(158, 156, 156);
+    width: 100%;
 }
 
 content .main .jumbo .jumbo-header {
@@ -116,5 +116,19 @@ content .main .grid-container img:hover {
     }
     header nav li a {
         margin: 0 15px;
+    }
+    content .main {
+        min-width: 96%;
+        margin: auto;
+    }
+    content .main .jumbo {
+        padding: 20px;
+        margin-top: 10%;
+        box-sizing: border-box;
+        color: #2c3e50;
+        background: #ecf0f1;
+        border-radius: 10px;
+        box-shadow: .1px .1px 5px rgb(158, 156, 156);
+        width: 100%;
     }
 }
