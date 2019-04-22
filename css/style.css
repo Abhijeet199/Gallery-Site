@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    user-select: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ========= header section ========= */
+header {
+    width: 100%;
+    padding: 10px 10%;
+    background: #2c3e50;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+}
+
+header .logo {
+    display: block;
+    float: left;
+}
+
+header .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav.first {
+    float: left;
+}
+
+header nav.second {
+    float: right;
+}
+
+header nav li a {
+    color: white;
+    line-height: 24px;
+    text-decoration: none;
+    margin: 0 0 0 30px;
+}
+
+
+
+/* ============== content section ================= */
+content {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+}
+
+content .main {
+    position: relative;
+    width: 80%;
+    margin: 25px auto;
+    min-width: 384px;
+}
+
+content .main .jumbo {
+    padding: 50px;
+    box-sizing: border-box;
+    color: #2c3e50;
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: .1px .1px 5px rgb(158, 156, 156);
+}
+
+content .main .jumbo .jumbo-header {
+    font-size: 46px;
+}
+
+content .main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+    margin: 25px 0;
+}
+
+content .main .grid-container a img {
+    background: #ecf0f1;
+    box-shadow: .1px .1px 5px rgb(158, 156, 156);
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+content .main .grid-container img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+    box-shadow: .1px .1px 20px rgb(54, 53, 53);
+}
+/* ============== Media Queries ================= */
+@media screen and (max-width:728px) {
+    content .main .grid-container a img {
+        filter: grayscale(0);
+    }
+}
+@media screen and (max-width: 488px) {
+    header .logo {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    header nav li a {
+        margin: 0 15px;
+    }
+}
