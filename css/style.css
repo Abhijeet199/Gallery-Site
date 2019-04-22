@@ -86,6 +86,7 @@ content .main .grid-container {
 }
 
 content .main .grid-container a img {
+    position: relative;
     background: #ecf0f1;
     box-shadow: .1px .1px 5px rgb(158, 156, 156);
     width: 100%;
@@ -115,7 +116,7 @@ content .main .grid-container img:hover {
         text-align: center;
     }
     header nav li a {
-        margin: 0 15px;
+        margin: 0 10px;
     }
     content .main {
         min-width: 96%;
@@ -127,7 +128,7 @@ content .main .grid-container img:hover {
     }
     content .main .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(96%, 1fr));
-        grid-gap: 10%;
+        grid-gap: 10px;
     }
     
 }
